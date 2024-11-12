@@ -1,0 +1,633 @@
+/* Estilos generales */
+body {
+    font-family: 'Cinzel', Arial, sans-serif; /* Se aplica Cinzel en todo el texto */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1 a, h2 a {
+    color: #2e8b57;
+    text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover {
+    color: #1a5c38;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #e6ffe6;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo a {
+    font-size: 1.5rem;
+    color: #2e8b57;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+#logo a:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #2e8b57;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1a5c38;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.welcome-image {
+    max-width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.producto {
+    background-color: #f9fff9;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.producto h3 {
+    color: #2e8b57;
+    margin-bottom: 0.5rem;
+}
+
+.agregar-carrito {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #1a5c38;
+}
+
+.contacto-info {
+    text-align: center;
+}
+
+footer {
+    background-color: #e6ffe6;
+    color: #2e8b57;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.map-container {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+        white-space: nowrap;
+    }
+
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
+
+/* Estilos generales */
+body {
+    font-family: 'Cormorant Garamond', serif; /* Fuente sutil y adornada para el cuerpo */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+}
+
+h1 a, h2 a {
+    color: #2e8b57;
+    text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover {
+    color: #1a5c38;
+}
+
+/* Resto del código */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ...los demás estilos permanecen iguales */
+
+h1, h2 {
+    color: #2e8b57; /* Color verde */
+    font-family: 'Cinzel', serif; /* Asegúrate de que 'Cinzel' esté definido en tu CSS */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto del enlace igual que el resto del texto */
+}
+
+
+/* tortas */
+
+
+:root {
+    --primary-color: #e8f5e9;
+    --secondary-color: #81c784;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu-item {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Product Gallery */
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.main-image img:hover {
+    transform: scale(1.1);
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.thumbnail.active {
+    border: 2px solid var(--secondary-color);
+}
+
+/* Product Info */
+.product-info {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 1rem 0;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.quantity-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #66bb6a;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #66bb6a;
+    transform: translateY(-2px);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90vh;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--white);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.product-info, .product-gallery {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Tipografía y color */
+h3, h2 {
+    font-family: 'Cinzel', serif; /* Font-family específico para títulos */
+    color: #81c784; /* Verde claro para títulos */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo y espacio para la sección de retiro en tienda */
+.store-pickup,
+.product-description,
+.share {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+/* Estilo para los botones de redes sociales */
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+}
+
+/* Resaltado de aviso de anticipación */
+.highlight, .notice {
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+
+p {
+    font-family: 'Domine', serif; 
+}
+
+.product-description p {
+    font-family: 'Domine', serif; 
+}
+
+
+/* nosotros */
+
+
+#sobre-nosotros {
+    background-color: #f4f4f4; /* Fondo suave */
+    padding: 40px 20px;
+    font-family: 'Cinzel', serif; /* Usamos Cinzel para todos los textos principales */
+}
+
+#sobre-nosotros h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5cb85c; /* Verde suave */
+    text-transform: uppercase;
+    border-bottom: 3px solid #5cb85c; /* Borde inferior verde clarito */
+    padding-bottom: 10px;
+}
+
+#sobre-nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-family: 'Domine', serif; /* Fuente Domine */
+}
+
+#sobre-nosotros .map-container {
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid #5cb85c; /* Borde verde clarito */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+#sobre-nosotros iframe {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+}
+
+/* contacto */
+
+
+
+#contacto {
+    background-color: #f4f4f4; /* Fondo suave */
+    padding: 40px 20px;
+    font-family: 'Cinzel', serif; /* Usamos Cinzel para los títulos */
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #5cb85c; /* Verde suave */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #5cb85c; /* Borde inferior verde clarito */
+    padding-bottom: 10px;
+}
+
+#contacto .contacto-info {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Domine', serif; /* Fuente Domine para los párrafos */
+    color: #333;
+    text-align: left;
+}
+
+#contacto .contacto-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+#contacto .contacto-info a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: inherit; /* Mantener el color del texto */
+    transition: color 0.3s ease;
+}
+
+#contacto .contacto-info a:hover {
+    color: #5cb85c; /* Verde suave en hover */
+}
+
+#contacto .contacto-info p:hover {
+    color: #5cb85c; /* Verde suave en hover */
+}
