@@ -24,16 +24,58 @@
         </header>
 
         <main>
-            <section id="inicio">
-                <div class="welcome-content">
-                    <img src="imagenes/SAN MIGUEL.png" alt="Bienvenida" class="welcome-image">
-                    <div class="welcome-text">
-                        <h2>Bienvenidos a SAN MIGUEL</h2>
-                        <p>😊 Estamos encantados de que nos visites. Aquí encontrarás una deliciosa selección de productos artesanales, desde nuestras tortas personalizadas y alfajorcitos caseros, hasta nuestras mesas dulces hechas a tu gusto, ¡todo elaborado por Ana con el mayor cariño y dedicación! Cada producto está hecho con la mejor calidad, buscando siempre ofrecerte lo mejor para que tus momentos sean inolvidables🍰✨</p>
+            <section id="inicio" style="border: 2px solid #90EE90; border-radius: 10px; padding: 20px; background-color: #f5f5f5; margin: 20px 0;">
+                <div class="welcome-content" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <img src="imagenes/SAN MIGUEL.png" alt="Bienvenida" class="welcome-image" style="width: 80%; max-width: 400px; border-radius: 10px; margin-bottom: 20px;">
+                    <div class="welcome-text" style="font-family: 'Domine', serif; line-height: 1.6; color: #333;">
+                        <h2 id="animated-h2" style="font-family: 'Cinzel', serif; font-size: 28px; color: #2e8b57; margin-bottom: 15px;">
+                            Bienvenidos a SAN MIGUEL
+                        </h2>
+                        <p style="font-size: 18px; font-weight: 600; color: #555;">😊 Estamos encantados de que nos visites. Aquí encontrarás una deliciosa selección de productos artesanales, desde nuestras tortas personalizadas y alfajorcitos caseros, hasta nuestras mesas dulces hechas a tu gusto, ¡todo elaborado por Ana con el mayor cariño y dedicación! Cada producto está hecho con la mejor calidad, buscando siempre ofrecerte lo mejor para que tus momentos sean inolvidables🍰✨</p>
                     </div>
                 </div>
             </section>
-
+            
+            <style>
+                /* Animación de subrayado suave que aparece y desaparece automáticamente */
+                #animated-h2 {
+                    position: relative;
+                    display: inline-block;
+                    color: #2e8b57;
+                }
+            
+                #animated-h2::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #2e8b57;
+                    transform: scaleX(0);
+                    animation: underlineAnimation 4s ease-in-out infinite;
+                }
+            
+                /* Definir la animación que hace aparecer y desaparecer el subrayado */
+                @keyframes underlineAnimation {
+                    0% {
+                        transform: scaleX(0);
+                    }
+                    25% {
+                        transform: scaleX(1);
+                    }
+                    50% {
+                        transform: scaleX(1);
+                    }
+                    75% {
+                        transform: scaleX(0);
+                    }
+                    100% {
+                        transform: scaleX(0);
+                    }
+                }
+            </style>
+            
             <section id="productos">
                 <h2>Nuestros Productos</h2>
                 <div class="productos-grid">
@@ -41,7 +83,8 @@
                         <a href="tortas.html">
                             <img src="imagenes/torta1.jpg" alt="Pan Artesanal">
                             <h3 class="producto-titulo">TORTAS ARTESANALES</h3>
-                            <p>Precio: $100</p>
+                            <p>Precio: $24.999
+                            </p>
                         </a>
                        <a href="tortas.html"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>
@@ -49,7 +92,7 @@
                         <a href="facturtas.html">
                             <img src="imagenes/fact4.jpg" alt="Croissant">
                             <h3 class="producto-titulo">FACTURAS</h3>
-                            <p>Precio: $50</p>
+                            <p>Precio: $6.000</p>
                         </a>
                          <a href="facturtas.html"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>
@@ -57,7 +100,7 @@
                         <a href="tartas.html">
                             <img src="imagenes/trt1.jpg" alt="Torta de Chocolate">
                             <h3 class="producto-titulo">TARTAS DE FRUTILA</h3>
-                            <p>Precio: $500</p>
+                            <p>Precio: $7.500</p>
                         </a>
                          <a href="tartas.html"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>
@@ -65,7 +108,7 @@
                         <a href="tazas.html">
                             <img src="imagenes/tz1.jpg" alt="Pan de Molde">
                             <h3 class="producto-titulo">TAZAS DE REGALO</h3>
-                            <p>Precio: $120</p>
+                            <p>Precio: $5.500</p>
                         </a>
                          <a href="tazas.html"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>
@@ -73,7 +116,7 @@
                         <a href="regalos.html">
                             <img src="imagenes/RGL1.jpg" alt="Berlines">
                             <h3 class="producto-titulo">ACCESORIOS PARA REGALAR</h3>
-                            <p>Precio: $70</p>
+                            <p>Precio: $6.500</p>
                         </a>
                          <a href="regalos.html"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>
@@ -81,7 +124,7 @@
                         <a href="alfajores.html">
                             <img src="imagenes/alf1.jpg" alt="Empanadas">
                             <h3 class="producto-titulo">ALFAJORCITOS</h3>
-                            <p>Precio: $80</p>
+                            <p>Precio: $3.500</p>
                         </a>
                          <a href="alfajores.html"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>
@@ -89,7 +132,7 @@
                         <a href="galletas.html">
                             <img src="imagenes/galleton1.jpg" alt="Pan de Ajo">
                             <h3 class="producto-titulo">GALLETONES CASEROS</h3>
-                            <p>Precio: $90</p>
+                            <p>Precio: $1.500</p>
                         </a>
                          <a href="galletas.html"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>
@@ -97,7 +140,7 @@
                         <a href="MESADULCE.HTML">
                             <img src="imagenes/MD1.jpg" alt="Pastaflora">
                             <h3 class="producto-titulo">MESAS DULCES</h3>
-                            <p>Precio: $60</p>
+                            <p>Precio: $consultar</p>
                         </a>
                          <a href="MESADULCE.HTML"><button class="agregar-carrito">Consultar producto</button></a> 
                     </div>

@@ -631,3 +631,12 @@ p {
 #contacto .contacto-info p:hover {
     color: #5cb85c; /* Verde suave en hover */
 }
+
+
+.welcome-image {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(144, 238, 144, 0.5); /* Sombra verde clarito */
+}
